@@ -30,6 +30,9 @@ x-base-config: &base-config
     retries: 3
     start_period: 40s
   user: "appuser"
+networks:
+  proxy:
+    external: true
 
 services:
   crawl4ai:
